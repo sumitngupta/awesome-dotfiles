@@ -52,32 +52,6 @@ brew install sfnt2woff
 brew install sfnt2woff-zopfli
 brew install woff2
 
-# Install some CTF tools; see https://github.com/ctfs/write-ups.
-brew install aircrack-ng
-brew install bfg
-brew install binutils
-brew install binwalk
-brew install cifer
-brew install dex2jar
-brew install dns2tcp
-brew install fcrackzip
-brew install foremost
-brew install hashpump
-brew install hydra
-brew install john
-brew install knock
-brew install netpbm
-brew install nmap
-brew install pngcheck
-brew install socat
-brew install sqlmap
-brew install tcpflow
-brew install tcpreplay
-brew install tcptrace
-brew install ucspi-tcp # `tcpserver` etc.
-brew install xpdf
-brew install xz
-
 # Install other useful binaries.
 brew install ack
 brew install git
@@ -101,9 +75,10 @@ brew install peco
 brew install gs
 
 # Development
-brew install ansible
+# brew install ansible
 brew install awscli
-brew install protobuf
+# brew install protobuf
+brew install dark-mode
 brew install direnv              # direnv for managing .envrc based environments
 brew install go
 brew install htop
@@ -124,6 +99,13 @@ brew install libpq               # install postgres tools without installing ful
 brew install elixir              # elixir programming language
 brew install kubectl             # kubernetes cli
 brew install helm                # helm kubernetes package manager
+
+# Rails Dev environment
+brew install rvm
+brew tap heroku/brew
+brew install heroku
+brew install github/gh/gh
+brew install node
 
 # miniconda python environment manager
 brew cask install miniconda
@@ -149,4 +131,36 @@ brew cask install aws-vault
 brew cask install font-hack-nerd-font
 
 # Remove outdated versions from the cellar.
+brew tap caskroom/cask
+
+# Core Functionality
+echo Install Core Apps
+brew cask install --appdir="/Applications" alfred
+brew cask install --appdir="/Applications" little-snitch
+brew cask install --appdir="~/Applications" transmission
+brew cask install --appdir="~/Applications" vlc
+brew cask install --appdir="~/Applications" iterm2
+brew cask install --appdir="~/Applications" flux
+
+# Development
+echo Install Dev Apps
+brew cask install --appdir="/Applications" atom
+brew cask install --appdir="/Applications" rubymine
+brew cask install --appdir="/Applications" charles
+
+# Google Slavery
+echo Install Google Apps
+brew cask install --appdir="/Applications" google-chrome
+brew cask install --appdir="/Applications" google-backup-and-sync
+
+# Nice to have
+echo Install Some additional Apps
+brew cask install --appdir="/Applications" firefox
+brew cask install --appdir="/Applications" slack
+brew cask install --appdir="/Applications" spotify
+brew cask install --appdir="/Applications" droplr
+brew cask install --appdir="/Applications" franz
+
+# Remove outdated versions from the cellar.
 brew cleanup
+brew cask cleanup

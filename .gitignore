@@ -17,3 +17,4 @@ Thumbs.db
 
 # Dotfiles we don't want to track
 .extra
+.idea
