@@ -16,6 +16,8 @@ if ! zgen saved; then
   zgen oh-my-zsh
 
   # oh my zsh plugins
+  zgen oh-my-zsh plugins/rails
+  zgen oh-my-zsh plugins/rubyss
   zgen oh-my-zsh plugins/osx
   zgen oh-my-zsh plugins/urltools
   zgen oh-my-zsh plugins/command-not-found
